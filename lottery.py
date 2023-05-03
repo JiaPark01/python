@@ -1,7 +1,14 @@
 # like lottery2.c
 import random
 
-lottery = [0, 0, 0, 0, 0, 0, 0]
+lottery = [i for i in range(1, 46)]
+	
+random.shuffle(lottery)
+
+lottery = lottery[0:7]
+
+'''
+lottery = [0 for i in range(7)]
 
 i = 0
 
@@ -16,7 +23,6 @@ while i < 7:
 	
 	if j == i:
 		i += 1
-	
-for k in lottery:
-	print(k)
+'''
+print("Lottery:", lottery)
 

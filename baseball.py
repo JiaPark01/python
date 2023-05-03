@@ -1,12 +1,8 @@
 import random
 
-ans = []
-num = random.randint(1, 9)
+ans = [i for i in range(1, 10)]
 
-for i in range(3):
-	while num in ans:
-		num = random.randint(1, 9)
-	ans.append(num)
+ans = random.sample(ans, 3)
 
 attempt = 10
 win = False
